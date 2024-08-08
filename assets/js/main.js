@@ -33,7 +33,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText",{
-  strings : ["Python Coder","Django Developer"],
+  strings : ["Python Coder","Web Developer","Django Developer"],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
