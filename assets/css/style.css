@@ -32,7 +32,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "JetBrains Mono";
-    src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+    src: url('../fonts/JetBrainsMono-Medium.woff2') format('woff2'),
          url('../fonts/JetBrainsMono-Regular.woff') format('woff');
 }
 
