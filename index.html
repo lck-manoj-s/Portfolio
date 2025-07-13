@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- --------- UNICONS ---------- -->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+        />
+
+        <!-- --------- CSS ---------- -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- --------- FAVICON ---------- -->
+        <link
+            rel="shortcut icon"
+            href="assets/images/favicon.png"
+            type="image/x-icon"
+        />
+
+        <!-- EMAIL SERVICE -->
+
+        <script
+            type="text/javascript"
+            src="https://cdn.emailjs.com/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("Ck8qnW9vmetcXTQAg"); // Replace with your Account's Public Key
+            })();
+        </script>
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- --------------- HEADER --------------- -->
+            <nav id="header">
+                <div class="nav-logo">
+                    <p class="nav-name" id="theme_button">ASJ</p>
+                </div>
+                <div class="nav-menu" id="myNavMenu">
+                    <ul class="nav_menu_list">
+                        <li class="nav_list">
+                            <a href="#home" class="nav-link active-link"
+                                >Home</a
+                            >
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#about" class="nav-link">About</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#skills" class="nav-link">Skills</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#experiences" class="nav-link">Experience</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#projects" class="nav-link">Projects</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#contact" class="nav-link">Contact</a>
+                            <div class="circle"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+
+            <!-- -------------- MAIN ---------------- -->
+            <main class="wrapper">
+                <!-- -------------- FEATURED BOX ---------------- -->
+                <section class="featured-box" id="home">
+                    <div class="featured-text">
+                        <div class="featured-text-card">
+                            <span>Manoj S</span>
+                        </div>
+                        <div class="featured-name">
+                            <p>I'm <span class="typedText"></span></p>
+                        </div>
+                        <div class="featured-text-info">
+                            <p>
+                                A passionate Computer Science student with hands-on experience in web development, 
+                                python programming, deep learning and debugging complex systems. Eager to solve 
+                                real-world problems always focusing on building smarter, not louder, by understanding
+                                the why behind the what.
+                            </p>
+                        </div>
+                        <div class="featured-text-btn">
+                                <a class="btn no-style" href="#projects">
+                                    <i class="uil uil-arrow"></i>
+                                    View Projects
+                                </a>
+                            <a class="btn no-style" href="#contact">
+                                <i class="uil uil-envelope-alt"></i>
+                                Connect Now
+                            </a>
+                        </div>
+                        <div class="social_icons">
+                            <a
+                                href="https://www.linkedin.com/in/manoj-s-9a3aaa252"
+                                target="_blank"
+                                class="no-style"
+                            >
+                                <div class="icon">
+                                    <i class="uil uil-linkedin-alt"></i>
+                                </div>
+                            </a>
+                            <a
+                                href="https://github.com/lck-manoj-s"
+                                target="_blank"
+                                class="no-style"
+                            >
+                                <div class="icon">
+                                    <i class="uil uil-github-alt"></i>
+                                </div>
+                            </a>
+                            <a
+                                href="https://leetcode.com/u/lck_manoj_s/"
+                                target="_blank"
+                                class="no-style"
+                            >
+                                <div class="icon">
+                                    <i class="uil uil-arrow"></i>
+                                </div>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/manojs2105"
+                                target="_blank"
+                                class="no-style"
+                            >
+                                <div class="icon">
+                                    <i class="uil uil-instagram"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="featured-image">
+                        <div class="image">
+                            <img src="assets/images/avatar.png" alt="avatar" id="avatar_image"/>
+                        </div>
+                    </div>
+                    <div class="scroll-icon-box">
+                        <a href="#about" class="scroll-btn">
+                            <i class="uil uil-mouse-alt"></i>
+                            <p>Scroll Down</p>
+                        </a>
+                    </div>
+                </section>
+                <!-- -------------- ABOUT BOX ---------------- -->
+                <section class="section" id="about">
+                    <div class="top-header">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="about-info">
+                        <h3>My introduction</h3>
+                        <p>
+                            I possess hands-on experience in Web Development and Python-based automation, 
+                            applying robust technical skills to build responsive web applications. My recent internship 
+                            at Informatica provided strong experience in debugging complex systems and resolving critical
+                            functional issues. With a keen interest in Deep Learning and a solid foundation in both backend 
+                            concepts and modern frameworks, I am eager to contribute to innovative software development.
+                        </p>
+                        <div class="about-btn">
+                            <button class="btn" id="viewCV">
+                                View CV
+                                <i class="uil uil-import"></i>
+                            </button>
+                        </div>
+                </section>
+
+                <!-- -------------- SKILLS BOX ---------------- -->
+                <section class="section" id="skills">
+                    <div class="top-header">
+                        <h1>Skills</h1>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skills-box">
+                            <h3>Programming Languages</h3>                            
+                            <div class="skills-list">
+                                <span>Python</span>
+                                <span>C</span>
+                                <span>Java</span>
+                                <span>SQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <h3>Frontend</h3>                            
+                            <div class="skills-list">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>React.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>Bootstrap CSS</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">                            
+                            <h3>Backend & DB </h3>
+                            <div class="skills-list">
+                                <span>Django</span>
+                                <span>PHP</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MySQL</span>
+                                <span>MongoDB</span>  
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <h3>Cloud & DevOps</h3>
+                            <div class="skills-list">
+                                <span>Git</span>
+                                <span>AWS</span>
+                                <span>GCP</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <h3>Tools</h3>
+                            <div class="skills-list">
+                                <span>VSCode</span>
+                                <span>GitHub</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <h3>MDM</h3>
+                            <div class="skills-list">
+                                <span>Informatica P360</span>
+                                <span>ActiveVOS</span>
+                                <span>Media Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- -------------- EXPERIENCE BOX ---------------- -->
+                <section class="section" id="experiences">
+                    <div class="top-header">
+                        <h1>Experience & Education</h1>
+                    </div>
+
+                    <div class="experience-container">
+                        <div class="experience-box">
+                            <h3>Associate Software Engineer</h3>
+                            <h4>
+                                <a 
+                                    href="https://www.informatica.com/"
+                                    target="_blank"
+                                    class="no-style"
+                                >
+                                    Informatica
+                                </a>
+                            </h4>
+                            <h4>July 2025 - Present</h4>
+
+                            <label>
+                                Debugging and resolving complex software and system issues by conducting in-depth technical
+                                analysis and collaborating closely with R&D teams. Optimized technical resolution pipelines
+                                directly contributing to enhanced product stability and operational efficiency.
+                            </label>
+                        </div>
+
+                        <div class="experience-box">
+                            <h3>Associate Software Engineer Intern</h3>
+                            <h4>
+                                <a 
+                                    href="https://www.informatica.com/"
+                                    target="_blank"
+                                    class="no-style"
+                                >
+                                    Informatica
+                                </a>
+                            </h4>
+                            <h4>Jan 2025 - July 2025</h4>
+
+                            <label>
+                                Gained comprehensive understanding of Informatica MDM Product 360 
+                                for master data management and ActiveVOS for business process orchestration. 
+                                This knowledge was applied to analyze and optimize workflows, directly impacting 
+                                and enhancing customer experience.
+                            </label>
+                        </div>
+
+                        <div class="experience-box">
+                            <h3>B.E - Computer Science & Engineering</h3>
+                            <h4>
+                                <a 
+                                    href="https://www.cit.edu.in/" 
+                                    target="_blank"
+                                    class="no-style"
+                                >
+                                    Coimbatore Institute of Technology
+                                </a>
+                            </h4>
+                            <h4>Sept 2021 - May 2025</h4>
+
+                            <label>
+                                Gained a strong foundation in core computer science principles of Data Structures,
+                                Databases, Operating Systems, Computer Networks, Computer Architecture, and actively
+                                pursued my interest in Deep Learning through hands-on project development.
+                            </label>
+                        </div>
+                            
+                </section>
+
+                <!-- -------------- PROJECT BOX ---------------- -->
+
+                <section class="section" id="projects">
+                    <div class="top-header">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project-container">
+
+                        <!-- PROJECT 1 -->
+
+                        <div class="project-box">
+                            <h3>Digi Attend</h3>
+                            <label>
+                                A smart digital solution to track and monitor student attendance and leaves by
+                                their staffs and HOD. HOD can also have chats regarding leave details of all the 
+                                students & staffs and manage subjects,courses and can assign subjects to the staff. 
+                                Students can track their attendance and leaves and can also chat with their HOD 
+                                regarding their leaves.
+                            </label>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>Bootstrap CSS</span>
+                                <span>JavaScript</span>
+                                <span>Django</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="links">
+                                <a
+                                    href="https://github.com/lck-manoj-s/Digi-Attend"
+                                    class="no-style"
+                                    target="_blank"
+                                >
+                                    <i class="uil uil-github-alt"></i>View
+                                </a>
+
+                                <a
+                                    href="https://manojsj.pythonanywhere.com/"
+                                    class="no-style"
+                                    target="_blank">
+                                    <i class="uil uil-server"></i> Visit
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT 2 -->
+
+                        <div class="project-box">
+                            <h3>DressUp</h3>
+                            <label>
+                                DressUp is a full-stack web application that helps users select matching shirt and pant color combinations. 
+                                This built using MERN stack to make men dressed up with suggestion from public, GenAI and his own. The app 
+                                supports two input methods: typing plain color names and uploading shirt and pant images. In addition it also
+                                allows users to add their own combos which can be used by others. 
+                            </label>
+                            <div class="tech-stack">
+                                <span>React.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>Node</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>Gemini API</span>
+                            </div>
+                            <div class="links">
+                                <a
+                                    href="https://github.com/lck-manoj-s/DressUp"
+                                    class="no-style"
+                                    target="_blank"
+                                >
+                                    <i class="uil uil-github-alt"></i>View
+                                </a>
+
+                                <a
+                                    href="https://grand-mousse-e94ff2.netlify.app/"
+                                    class="no-style"
+                                    target="_blank">
+                                    <i class="uil uil-server"></i> Visit
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT 3 -->
+                         
+                        <div class="project-box">
+                            <h3>EBF Applier</h3>
+                            <label>
+                                Automated Python scripts to streamline the process of applying for EBF
+                                (Emergency Bug Fixes) in Informatica MDM Product 360. It simplifes the EBF 
+                                application process by replacing the jar files of the product with the EBF 
+                                jar files without human intervention and maintains a log file to keep track
+                                of the files modified.
+
+                            </label>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>os (lib.)</span>
+                                <span>re (lib.)</span>
+                                <span>shutil (lib.)</span>
+                                <span>time (lib.)</span>
+                            </div>
+                            <div class="links">
+                                <a
+                                    href="https://github.com/lck-manoj-s/EBF-Applier"
+                                    class="no-style"
+                                    target="_blank"
+                                >
+                                    <i class="uil uil-github-alt"></i>View
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!-- PROJECT 4 -->
+                         
+                        <div class="project-box">
+                            <h3>MFlix</h3>
+                            <label>
+                                Real-time movie recommendation system that provides movie suggestions on 
+                                the 2 major categories of Popular and Trending. The system also allows users
+                                to add movies to their Watchlist where they can keep track of the movies 
+                                and has 2 ways for filtering the movies which are through Genre and searchs.
+                            </label>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>Tailwind CSS</span>
+                                <span>JavaScript</span>
+                                <span>React.js</span>
+                                <span>TMDB API</span>
+                            </div>
+                            <div class="links">
+                                <a
+                                    href="https://github.com/lck-manoj-s/MFlix"
+                                    class="no-style"
+                                    target="_blank"
+                                >
+                                    <i class="uil uil-github-alt"></i>View
+                                </a>
+
+                                <a
+                                    href="https://grand-mousse-e94ff2.netlify.app/"
+                                    class="no-style"
+                                    target="_blank">
+                                    <i class="uil uil-server"></i> Visit
+                                </a>
+                            </div>
+                        </div>
+                        
+
+                        <!-- PROJECT 5 -->
+                         
+                        <div class="project-box">
+                            <h3>Deepfake X</h3>
+                            <label>
+                                Deep Learning solution combined with the Front-End technology to combat against the 
+                                spread of DeepFake images. Deepfake X is a web application that allows users to upload
+                                an image and detect whether it is a deepfake or not. Used 3 CNN (Convolutional Neural 
+                                Network) models for image classification in ensemble approach and trained them using a 
+                                dataset of real and deepfake images of count greater than 1 lakh.
+
+                            </label>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>CNN</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Flask</span>
+                                
+                            </div>
+                            <div class="links">
+                                <a
+                                    href="https://github.com/mhanush21/DeepFake-Detection"
+                                    class="no-style"
+                                    target="_blank"
+                                >
+                                    <i class="uil uil-github-alt"></i>View
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                        <!-- PROJECT 6 -->
+                         
+                        <div class="project-box">
+                            <h3>Try QTech</h3>
+                            <label>
+                                Online Quiz platform that allows users to take quizzes on various topics, track their scores,
+                                and rates thier performance with stars. The platform features quiz creation with multiple-choice 
+                                questions where users can choose the number of questions they want to attempt. It has a user-friendly 
+                                interface where users can easily navigate through quizzes one at a time and view their results after
+                                the quiz gets completed.
+                            </label>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Django</span>
+                                <span>MySQL</span>
+                                <span>Figma</span>
+                            </div>
+                            <div class="links">
+                                <a
+                                    href="https://github.com/lck-manoj-s/Django-Project-2"
+                                    class="no-style"
+                                    target="_blank"
+                                >
+                                    <i class="uil uil-github-alt"></i>View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- -------------- CONTACT BOX ---------------- -->
+
+                <section class="section" id="contact">
+                    <div class="top-header">
+                        <h1>Get in touch</h1>
+                        <span>
+                            Do you have something to share with me or
+                            interested in knowing more
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-info">
+                                <h2>
+                                    Find Me
+                                    <i class="uil uil-corner-right-down"></i>
+                                </h2>
+                                <p>
+                                    <a
+                                        href="mailto:manojsubramaniamg@gmail.com"
+                                        target="_blank"
+                                        class="no-style"
+                                    >
+                                        <i class="uil uil-envelope"></i> Email
+                                    </a>
+                                </p>
+                                <p>
+                                    <i class="uil uil-phone"></i> Mobile: +91
+                                    9790225914
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-control">
+                                <div class="form-inputs">
+                                    <input
+                                        type="text"
+                                        class="input-field"
+                                        placeholder="Name"
+                                        id="name"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="input-field"
+                                        placeholder="Email"
+                                        id="email"
+                                    />
+                                </div>
+                                <div class="text-area">
+                                    <textarea
+                                        placeholder="Message"
+                                        id="message"
+                                    ></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button class="btn" id="sendButton">
+                                        Send <i class="uil uil-message"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- --------------- FOOTER --------------- -->
+            <footer>
+                <div class="top-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#experiences">Experience</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social-icons">
+                    <a
+                        href="https://www.linkedin.com/in/manoj-s-9a3aaa252"
+                        target="_blank"
+                        class="no-style"
+                    >
+                        <div class="icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </div>
+                    </a>
+                    <a
+                        href="https://github.com/lck-manoj-s"
+                        target="_blank"
+                        class="no-style"
+                    >
+                        <div class="icon">
+                            <i class="uil uil-github-alt"></i>
+                        </div>
+                    </a>
+                    <a
+                        href="https://leetcode.com/u/lck_manoj_s/"
+                        target="_blank"
+                        class="no-style"
+                    >
+                        <div class="icon">
+                            <i class="uil uil-arrow"></i>
+                        </div>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/manojs2105"
+                        target="_blank"
+                        class="no-style"
+                    >
+                        <div class="icon">
+                            <i class="uil uil-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom-footer">
+                    <p>
+                        Copyright &copy;
+                        <a href="#home" class="no-style"
+                            >Manoj S</a
+                        >
+                        - All rights reserved
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- ----- TYPING JS Link ----- -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <!-- ----- SCROLL REVEAL JS Link----- -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- ----- MAIN JS ----- -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
